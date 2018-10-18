@@ -123,6 +123,18 @@ class LinkedList {
       previous.next = new Node(data, previous.next);
     }
 
+    midpoint() {
+      let fast = this.getFirst();
+      let slow = this.getFirst();
+
+      while(fast.next && fast.next.next) {
+        slow = slow.next;
+        fast = fast.next.next;
+      }
+
+      return slow;
+    }
+
     clear() {
       this.head = null;
     }
