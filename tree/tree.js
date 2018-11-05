@@ -1,15 +1,17 @@
 class Tree {
-  constructor(data) {
-    this.data = data;
-    this.children = [];
+  constructor() {
+    this.root = null;
   }
 
-  add(item) {
-    this.children.push(new Tree(item));
-  }
-
-  remove(item) {
-    this.children = this.children.filter(oneChild => oneChild.data !== item);
+  traverseBF(fn) {
+    const arr = [this.root];
+    let count = 0;
+    while(arr.length) {
+      const node = arr.shift();
+      arr.push(...node.children);
+      fn(node, count, this);
+      count++;
+    }
   }
 }
 

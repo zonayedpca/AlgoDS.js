@@ -8,23 +8,24 @@ Create a tree class. The tree constructor should initialize a 'root' property to
 
 ## Output
 ```
-const t1 = new Tree(20);
+const t1 = new Tree();
+t1.root = new Node(20);
 
 (20)
 
 
-t1.add(0);
-t1.add(40);
-t1.add(-15);
+t1.root.add(0);
+t1.root.add(40);
+t1.root.add(-15);
 
       (20)
        ||
 (0)---(40)---(-15)
 
 
-t1.children[0].add(12);
-t1.children[0].add(-2);
-t1.children[0].add(1);
+t1.root.children[0].add(12);
+t1.root.children[0].add(-2);
+t1.root.children[0].add(1);
 
               (20)
                ||
@@ -33,7 +34,7 @@ t1.children[0].add(1);
 (12)---(-2)---(1)
 
 
-t1.children[2].add(-2);
+t1.root.children[2].add(-2);
 
               (20)
                ||
@@ -41,3 +42,8 @@ t1.children[2].add(-2);
         ||             ||
 (12)---(-2)---(1)     (-2)
 ```
+
+### Breadth First Traversal
+
+
+### Depth First Traversal
