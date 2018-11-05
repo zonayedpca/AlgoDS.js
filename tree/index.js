@@ -16,6 +16,13 @@ t1.root.children[2].add(-2);
 console.log(JSON.stringify(t1, null, 3));
 
 // Breadth First Traversal
+console.log('Breadth First Traversal');
 t1.traverseBF((node, index, tree) => {
+  console.log('Node:', node, 'Index:', index, 'Tree:', tree);
+});
+
+// Depth First Traversal
+console.log('Depth First Traversal');
+t1.traverseDF((node, index, tree) => {
   console.log('Node:', node, 'Index:', index, 'Tree:', tree);
 });
