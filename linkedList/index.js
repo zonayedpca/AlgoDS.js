@@ -86,3 +86,15 @@ l2.insertLast('f');
 l2.insertLast('g');
 l2.insertLast('h');
 console.log('The Node:', fromLast(l2, 2));
+
+// forEach
+console.log('forEach');
+l2.forEach((node, index, list) => {
+  console.log('Data:', node.data, 'Index:', index, 'List:', list);
+})
+
+// for...of loops
+console.log('For of loops');
+for(let [node, index] of l2) {
+  console.log('Data:', node.data, 'Index:', index);
+}

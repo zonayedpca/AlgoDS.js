@@ -135,6 +135,26 @@ class LinkedList {
       return slow;
     }
 
+    forEach(fn) {
+      let node = this.head;
+      let count = 0;
+      while(node) {
+        fn(node, count, this.head);
+        node = node.next;
+        count++;
+      }
+    }
+
+    *[Symbol.iterator]() {
+      let node = this.head;
+      let count = 0;
+      while(node) {
+        yield [node, count];
+        node = node.next;
+        count++;
+      }
+    }
+
     clear() {
       this.head = null;
     }
