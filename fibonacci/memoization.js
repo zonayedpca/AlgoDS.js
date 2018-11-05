@@ -1,11 +1,11 @@
 const memoization = fn => {
   const cache = {};
-  return function(...args) {
-    if (cache[args]) {
-      return cache[args];
+  return function(n) {
+    if (cache[n]) {
+      return cache[n];
     }
-    const result = fn.apply(this, args);
-    cache[args] = result;
+    const result = fn(n);
+    cache[n] = result;
 
     return result;
   }
