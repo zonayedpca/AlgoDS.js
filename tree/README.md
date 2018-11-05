@@ -9,34 +9,35 @@ Create a tree class. The tree constructor should initialize a 'root' property to
 ## Output
 ```
 const t1 = new Tree(20);
-```
+
 (20)
 
-```
+
 t1.add(0);
 t1.add(40);
 t1.add(-15);
-```
+
       (20)
        ||
 (0)---(40)---(-15)
 
-```
+
 t1.children[0].add(12);
 t1.children[0].add(-2);
 t1.children[0].add(1);
-```
+
               (20)
                ||
         (0)---(40)---(-15)
         ||           
 (12)---(-2)---(1)
 
-```
+
 t1.children[2].add(-2);
-```
+
               (20)
                ||
         (0)---(40)---(-15)
         ||             ||
 (12)---(-2)---(1)     (-2)
+```
