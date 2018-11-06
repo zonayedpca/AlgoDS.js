@@ -1,5 +1,6 @@
 const Node = require('./Node'),
-      Tree = require('./Tree');
+      Tree = require('./Tree'),
+      levelWidth = require('./levelWidth');
 
 const t1 = new Tree();
 t1.root = new Node(20);
@@ -26,3 +27,7 @@ console.log('Depth First Traversal');
 t1.traverseDF((node, index, tree) => {
   console.log('Node:', node, 'Index:', index, 'Tree:', tree);
 });
+
+// Level Width
+const level = levelWidth(t1.root);
+console.log('Level Width of this tree is:', level);
