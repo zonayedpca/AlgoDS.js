@@ -10,10 +10,10 @@ Sort an array using Bubble Sort
 - Sorted: **[-30, 0, 5, 10, 97]**
 
 ```
-From ```i = 0``` to < ```array.length```
-  From ```j = 0``` to ```(array.length - i)```
-    If the element at ```j``` is greater than ```j + 1```
-      Swap elements at ```j``` and ```j + 1```
+From i = 0 to < array.length
+  From j = 0 to (array.length - i)
+    If the element at j is greater than j + 1
+      Swap elements at j and j + 1
 ```
 
 ## Complexity
