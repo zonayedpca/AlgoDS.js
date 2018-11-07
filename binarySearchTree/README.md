@@ -28,3 +28,6 @@ Implement Binary Search Tree
 - Implement the Node class to create a binary search tree. The constructor should initialize values 'data', 'left' and 'right'
 - Implement the 'insert' method for the Node class. Insert should accept an argument 'data' then create and insert a new node at the appropriate location in the tree.
 - Implement the 'contains' method for the Node class. 'contains' should accept a 'data' argument and return the Node in the tree with the same value. If the value isn't in the tree, return null
+
+### Validating a Binary Search Tree
+- Given a node, validate the binary search tree, ensuring that every node's left hand child is less than the parent node's value and that every node's right hand child is greater than the parent

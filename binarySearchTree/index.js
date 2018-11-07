@@ -1,4 +1,5 @@
-const BST = require('./bst');
+const BST = require('./bst'),
+      validate = require('./validate');
 
 const bst1 = new BST(10);
 console.log('BST:', bst1);
@@ -22,3 +23,7 @@ const minTwenty = bst1.contains(-20);
 console.log('Is it here:', minTwenty);
 const hundred = bst1.contains(100);
 console.log('Is it here:', hundred);
+
+// Validate
+const validated = validate(bst1);
+console.log('Is it valid:', validated);
