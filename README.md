@@ -16,8 +16,18 @@ It allows us to calculate how the runtime of an Algorithm grows as the inputs gr
 
 ## Run Time Complexity
 Describe the performance of an algorithm. How much processing power or time is required to run an algorithm if we double the amount of input
-- Constant Time => O(1)
+- Constant Time => ```O(1)```
 The algorithms will always take the same amount of time no matter how large our input data is or small. It is always the same. Thus it is called as constant time.
+- Logarithm Time => ```log(n)```
+Doubling the inputs will not double the amount of work required
+- Linear Time => ```n```
+Iterating over all the elements in a collection once. Usually if any program has one ```for``` loop, it can have linear time complexity
+- Quasilinear Time => ```n * log(n)```
+Doubling the elements will double the amount of work required
+- Quadratic Time => ```n^2```
+Every element in a collection has to be compared to every other element
+- Exponential Time => ```2^n```
+Adding a single element will double the work required. 
 ```
        O(n^2)
 |       / / O(nlogn)/ O(n)
@@ -32,8 +42,21 @@ The algorithms will always take the same amount of time no matter how large our 
 |//___________________________
 ```
 
+### Identifying Runtime Complexity
+- Iterating through a collection using a single for loop => ```O(n)```
+- Iterating through half of a collection using a single for loop => ```O(n)```
+- Iterating through two different collection using separate for loop => ```O(n + m)```
+- Two nested loop iterating over same collection => ```O(n^2)```
+- Two nested loop iterating over different collection => ```O(n * m)```
+- Most of the Sorting Algorithm => ```O(n * log(n))```
+- Searching on a Sorted Collection => ```O(logn)```
+
 ## Space Complexity
-The amount of space in the memory required by that particular Algorithm
+The amount of space in the memory required by that particular Algorithm. How much more memory is required by doubling the problem set.
+```
+123 => 321 => n times
+123456 => 654321 n times
+```
 
 ### Some Mostly Used Space Complexity
 - Boolean, Numbers, undefined, null including most of the primitives are constant
@@ -100,3 +123,15 @@ This pattern uses objects or sets to collect values/frequency of values. Thus mo
 
 ### Multiple Pointers
 Creating pointers or values that correspond to an ndex or position and move towards beginning, end or middle based on a certain condition
+
+# Data Structure
+Ways of organizing information with optimal **runtime complexity** for adding, removing and some basic operations in the record. Some example of mostly used Data Structure 
+- Array
+- Object
+- Stack
+- Queue
+- Linked List
+- Tree
+- Graph
+- Set
+- Hash Table
