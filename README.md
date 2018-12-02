@@ -16,8 +16,18 @@ It allows us to calculate how the runtime of an Algorithm grows as the inputs gr
 
 ## Run Time Complexity
 Describe the performance of an algorithm. How much processing power or time is required to run an algorithm if we double the amount of input
-- Constant Time => O(1)
+- Constant Time => ```O(1)```
 The algorithms will always take the same amount of time no matter how large our input data is or small. It is always the same. Thus it is called as constant time.
+- Logarithm Time => ```log(n)```
+Doubling the inputs will not double the amount of work required
+- Linear Time => ```n```
+Iterating over all the elements in a collection once. Usually if any program has one ```for``` loop, it can have linear time complexity
+- Quasilinear Time => ```n * log(n)```
+Doubling the elements will double the amount of work required
+- Quadratic Time => ```n^2```
+Every element in a collection has to be compared to every other element
+- Exponential Time => ```2^n```
+Adding a single element will double the work required. 
 ```
        O(n^2)
 |       / / O(nlogn)/ O(n)
