@@ -1,5 +1,5 @@
 # JavaScript Algorithm And Data Structure
-This is a attempt to implement all kind of widely used **Algorithms** and **Data Structures** in the programming world using JavaScript. Thus the term *AlgoDS* is used as a name of this repository. Anyone can use it as a reference to implement those problems. If you have any suggestion, then please make an issue or contact me, I will be greatful to you.
+This is a attempt to implement all kind of widely used **Algorithms** and **Data Structures** in the programming world using JavaScript. Thus the term *AlgoDS* is used as a name of this repository. Anyone can use it as a reference to implement those problems. If you have any suggestion, then please make an issue or contact me, I will be grateful to you.
 
 # The Solutions
 Most of the implementations are done using pure functions so that anyone can use them as well if they want. ```index.js``` files are made for testing purpose. Besides, you will find **README** file in every problem that will illustrate the problem so that you can understand them easily.
