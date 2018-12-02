@@ -49,10 +49,14 @@ Adding a single element will double the work required.
 - Two nested loop iterating over same collection => ```O(n^2)```
 - Two nested loop iterating over different collection => ```O(n * m)```
 - Most of the Sorting Algorithm => ```O(n * log(n))```
-- Searching on a Sorting => ```O(logn)```
+- Searching on a Sorted Collection => ```O(logn)```
 
 ## Space Complexity
-The amount of space in the memory required by that particular Algorithm
+The amount of space in the memory required by that particular Algorithm. How much more memory is required by doubling the problem set.
+```
+123 => 321 => n times
+123456 => 654321 n times
+```
 
 ### Some Mostly Used Space Complexity
 - Boolean, Numbers, undefined, null including most of the primitives are constant
