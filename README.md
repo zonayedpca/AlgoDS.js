@@ -123,3 +123,15 @@ This pattern uses objects or sets to collect values/frequency of values. Thus mo
 
 ### Multiple Pointers
 Creating pointers or values that correspond to an ndex or position and move towards beginning, end or middle based on a certain condition
+
+# Data Structure
+Ways of organizing information with optimal **runtime complexity** for adding, removing and some basic operations in the record. Some example of mostly used Data Structure 
+- Array
+- Object
+- Stack
+- Queue
+- Linked List
+- Tree
+- Graph
+- Set
+- Hash Table
