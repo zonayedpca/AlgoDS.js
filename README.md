@@ -42,6 +42,15 @@ Adding a single element will double the work required.
 |//___________________________
 ```
 
+### Identifying Runtime Complexity
+- Iterating through a collection using a single for loop => ```O(n)```
+- Iterating through half of a collection using a single for loop => ```O(n)```
+- Iterating through two different collection using separate for loop => ```O(n + m)```
+- Two nested loop iterating over same collection => ```O(n^2)```
+- Two nested loop iterating over different collection => ```O(n * m)```
+- Most of the Sorting Algorithm => ```O(n * log(n))```
+- Searching on a Sorting => ```O(logn)```
+
 ## Space Complexity
 The amount of space in the memory required by that particular Algorithm
 
