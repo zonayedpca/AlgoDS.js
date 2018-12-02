@@ -1,0 +1,27 @@
+{
+  "name": "algods.js",
+  "version": "1.0.0",
+  "description": "Implemetation of Mostly Used Algorithms and Data Structures using JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zonayedpca/Algorithm.js.git"
+  },
+  "keywords": [
+    "javascript-data-structure",
+    "javascript-algorithm",
+    "javascript-ds"
+  ],
+  "author": "Zonayed Ahmed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zonayedpca/Algorithm.js/issues"
+  },
+  "homepage": "https://github.com/zonayedpca/Algorithm.js#readme",
+  "dependencies": {
+    "jest": "^23.6.0"
+  }
+}
